@@ -3,7 +3,7 @@
 Skytraq GPX manager downloads and converts data from loggers
 with Skytrak Venus chipset. Also able to remove data. [GPSBabel](http://www.gpsbabel.org) 1.3 or later is required.
 
-<p align="center">![Screenshot](skytraq.png?raw=true "Screenshot")</p>
+<p align="center">![Screenshot](https://github.com/christianhent/skytraqvenus/blob/master/skytraq.png?raw=true "Screenshot")</p>
 
 ##Usage##
 
