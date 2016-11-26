@@ -18,7 +18,7 @@ Usage: $Usage
 
 	$(tput setaf 2)-c$(tput sgr 0)     get data based on configuration values
 
-	$(tput setaf 2)-d$(tput sgr 0)     delete all logged data
+	$(tput setaf 2)-d$(tput sgr 0)     delete all logged data from the logger
 
 	$(tput setaf 2)-t$(tput sgr 0)     get data based on a time range, example:
 	       $(tput setaf 2)./skytraq.sh -t 'the title' 201409190600 201409201800$(tput sgr 0)
