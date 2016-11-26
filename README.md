@@ -1,38 +1,51 @@
-#Skytrak Venus GPX Converter#
+#Skytraq GPX Manager#
 
-Downloads and converts data from GPS loggers with Skytrak Venus chipset into popular GPX XML files. [GPSBabel](http://www.gpsbabel.org) 1.3 or later is required.
+Skytraq GPX manager downloads and converts data from loggers
+with Skytrak Venus chipset. Also able to remove data. [GPSBabel](http://www.gpsbabel.org) 1.3 or later is required.
 
 ##Usage##
 
-    ./export.sh [-c] [-p] [-t arg1 arg2 arg3] [-x arg] or [-h] for help
+   ./skytraq.sh [-b] [-c] [-d] [-t arg1 arg2 arg3] [-v] [-x arg] or [-h] for help
 
 ##Options and Arguments##
+
+__-b__
+
+get data while trackpoints are bad ordered
+
+ ./skytraq.sh -b
 
 __-c__
 
 get data based on configuration values
 
-	./export.sh -c
+ ./skytraq.sh -c
 
-__-p__ 
+ __-d__
 
-get data while trackpoints are bad ordered, the no panic! mode
+ delete all logged data from the logger
 
-	./export.sh -p
+  ./skytraq.sh -d
 
 __-t__
 
 get data based on a time range
 
-	./export.sh -t 'the title' 201409190600 201409201800
+ ./skytraq.sh -t 'the title' 201409190600 201409201800
 
 _requires three arguments_ : `string` `datetime` `datetime`
+
+__-v__
+
+show version of this script
+
+ ./skytraq.sh -v
 
 __-x__
 
 get only data from same day
 
-	./export.sh -x 'the title'
+ ./skytraq.sh -x 'the title'
 
 _requires one argument_ : `string`
 
@@ -42,4 +55,4 @@ GPSBabel will look for a file named _config.ini_ containing preferences. The for
 
 ##GPX files##
 
-The used GPX specification is version __1.1__. If needed, edit the `config.ini` file to change this preference for using version 1.0 of the specification. The names of the generated `.gpx` files are unique and based on timestamps. Output tested with follow sports trackers and gpx tools: endomondo.com - strava.com - [leaflet.gpx plugin](https://github.com/mpetazzoni/leaflet-gpx).
+The used GPX specification is version __1.1__. If needed, edit the `config.ini` file to change this preference for using version 1.0 of the specification. The names of the generated `.gpx` files are unique and based on timestamps. Output tested with follow sports trackers and gpx tools: endomondo.com - strava.com - [leaflet.gpx plugin](https://github.com/mpetazzoni/leaflet-gpx) - [zatracks Joomla plugin](https://github.com/christianhent/plg_content_zatracks).
